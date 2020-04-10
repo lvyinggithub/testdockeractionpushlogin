@@ -6,7 +6,7 @@ echo "::set-output name=time::$time"
 
 docker build . --file Dockerfile --tag my-image-name:3
 
-docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+docker login -u $1 -p $2
 
 docker tag my-image-name:3 lvyingde51/test:3
 
