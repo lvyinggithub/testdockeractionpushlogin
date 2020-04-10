@@ -8,7 +8,7 @@ RUN yum install -y golang
 RUN yum install -y docker
 
 #RUN service docker start
-RUN docker version
+#RUN docker version
 #RUN chkconfig docker on
 ADD . ./
 # Create root2 account
