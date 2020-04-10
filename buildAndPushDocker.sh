@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Hello $1"
-time=$(date)
+#echo "Hello $1"
+#time=$(date)
 echo "::set-output name=time::$time"
 
 docker build . --file Dockerfile --tag my-image-name:3
