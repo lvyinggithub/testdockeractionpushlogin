@@ -16,4 +16,5 @@ RUN chmod 777 /root2/buildAndPushDocker.sh
 RUN chmod 777 /root2/*
 USER	root2
 WORKDIR /root2
-ENTRYPOINT ["/buildAndPushDocker.sh"]
+ENTRYPOINT ["/root2/buildAndPushDocker.sh"]
+#CMD ["/root2/buildAndPushDocker.sh"]
