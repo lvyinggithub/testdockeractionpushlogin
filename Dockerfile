@@ -7,9 +7,9 @@ RUN yum install -y gcc-c++ make
 RUN yum install -y golang
 RUN yum install -y docker
 
-RUN service docker start
+#RUN service docker start
 RUN docker version
-RUN chkconfig docker on
+#RUN chkconfig docker on
 ADD . ./
 # Create root2 account
 RUN	useradd -d /root2 -m -s /bin/bash -U root2
