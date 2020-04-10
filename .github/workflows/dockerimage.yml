@@ -17,4 +17,4 @@ jobs:
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       - name: sh shell
-        run: sh 1.sh
+        run: sh buildAndPushDocker.sh
