@@ -2,9 +2,7 @@
 echo "Hello $1"
 time=$(date)
 echo "::set-output name=time::$time"
-docker version
-service docker start
-chkconfig docker on
+
 docker build . --file Dockerfile --tag my-image-name:3
 
 docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
