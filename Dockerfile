@@ -6,8 +6,9 @@ RUN yum install -y expect redis-server ansible java-1.7.0-openjdk wget unzip ope
 RUN yum install -y gcc-c++ make
 RUN yum install -y golang
 RUN yum install -y docker
-RUN docker version
+
 RUN service docker start
+RUN docker version
 RUN chkconfig docker on
 ADD . ./
 # Create root2 account
