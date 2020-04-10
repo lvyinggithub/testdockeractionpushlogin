@@ -12,6 +12,7 @@ RUN	useradd -d /root2 -m -s /bin/bash -U root2
 ADD ./buildAndPushDocker.sh  /root2/buildAndPushDocker.sh
 #ADD ./main.go  /root2/main.go
 RUN chown -R root2:root2 /root2/buildAndPushDocker.sh
+RUN chmod 777 /root2/buildAndPushDocker.sh
 RUN chmod 777 /root2/*
 USER	root2
 WORKDIR /root2
