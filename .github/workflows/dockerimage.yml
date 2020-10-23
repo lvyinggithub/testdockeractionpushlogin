@@ -19,4 +19,4 @@ jobs:
       - name: Check  linux version
         run: uname -a
       - name: sh shell
-        run: sh buildAndPushDocker.sh harbor.corp.hpicloud.net ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
+        run: sh buildAndPushDocker.sh  ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
